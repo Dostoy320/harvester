@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
-import Phaser1 from "@/components/Phaser1.vue";
 </script>
 
 <template>
@@ -17,7 +15,8 @@ import Phaser1 from "@/components/Phaser1.vue";
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
-      <Phaser1 />
+      
+
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
