@@ -26,8 +26,6 @@ export default class GameScene extends Phaser.Scene {
     }
 
     update() {
-      this.x++
-      this.y++
-      this.token.setPosition(this.x, this.y)
+    //   this.token.setPosition(this.x, this.y)
     }
 }

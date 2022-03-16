@@ -1,9 +1,15 @@
-<script setup lang="ts">
-import Game from "@/components/Game.vue";
-</script>
-
 <template>
-  <main>
-    <Game />
-  </main>
+  <div class="about">
+    <h1>Welcome to Harvester</h1>
+  </div>
 </template>
+
+<style>
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>

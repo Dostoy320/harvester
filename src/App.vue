@@ -13,14 +13,9 @@ import { RouterLink, RouterView } from "vue-router";
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      
-
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/game">Game</RouterLink>
       </nav>
     </div>
   </header>
@@ -95,7 +90,7 @@ nav a:first-of-type {
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 5fr;
     padding: 0 2rem;
   }
 
