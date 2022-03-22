@@ -30,4 +30,8 @@
 
 <style scoped>
 
+    #game-container {
+        height: 700px;
+        width: 1000px;
+    }
 </style>
