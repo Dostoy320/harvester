@@ -14,6 +14,7 @@ export default class GameScene extends Phaser.Scene {
 
     preload() {
         this.load.image('space', '../../../src/assets/space.png');
+        this.load.image('ship', '../../../src/assets/ship.png');
         this.load.image('planet_venus', '../../../src/assets/venus-transparent.png');
         this.load.image('planet_neptune', '../../../src/assets/neptune-transparent.png');
         
@@ -27,9 +28,11 @@ export default class GameScene extends Phaser.Scene {
 
         this.planets.create(300, 200, 'planet_venus').setScale(.08);
         this.planets.create(650, 400, 'planet_neptune').setScale(.08);
+
+        const ship = this.add.image(300, 300, 'ship').setScale(.05).setInteractive();
+        this.input.setDraggable(ship);
         
-        this.token = this.add.rectangle(30, 30, 40, 40, 0x00ffff).setInteractive();
-        this.input.setDraggable(this.token);
+
         this.input.on('drag', (pointer: any, gameObject: any, dragX:any , dragY: any) => {
             gameObject.x = dragX;
             gameObject.y = dragY;
