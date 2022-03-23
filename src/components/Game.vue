@@ -12,7 +12,7 @@
             const game = await import('../game/game');
             this.downloaded = true;
             this.$nextTick(() => {
-                this.gameInstance = game.launch(this.containerId)
+                this.gameInstance = game.launch(this.containerId);
             })
         },
         destroyed() {
@@ -24,12 +24,11 @@
 <template>
     <div :id="containerId" v-if="downloaded" />
     <div class="placeholder" v-else>
-        Downloading...
+        Initializing...
     </div>
 </template>
 
 <style scoped>
-
     #game-container {
         height: 700px;
         width: 1000px;
