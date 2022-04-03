@@ -1,4 +1,8 @@
 import Phaser from 'phaser'
+import spacePng from '../../../src/assets/space.png';
+import shipPng from '../../../src/assets/ship.png';
+import venusPng from '../../../src/assets/venus-transparent.png';
+import neptunePng from '../../../src/assets/neptune-transparent.png'
 
 export default class GameScene extends Phaser.Scene {
 
@@ -13,10 +17,10 @@ export default class GameScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('space', '../../../src/assets/space.png');
-        this.load.image('ship', '../../../src/assets/ship.png');
-        this.load.image('planet_venus', '../../../src/assets/venus-transparent.png');
-        this.load.image('planet_neptune', '../../../src/assets/neptune-transparent.png');
+        this.load.image('space', spacePng);
+        this.load.image('ship', shipPng);
+        this.load.image('planet_venus', venusPng);
+        this.load.image('planet_neptune', neptunePng);
         
     }
 

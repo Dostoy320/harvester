@@ -9,11 +9,11 @@
     "strictPropertyInitialization": false,
   },
 
-  "references": [
-    {
-      "path": "./tsconfig.vite-config.json"
-    }
-  ]
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.vite-config.json"
+  //   }
+  // ]
 }
 
 
