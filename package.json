@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build-server": "npx tsc -p ./server/tsconfig.json",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
@@ -18,7 +19,8 @@
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
-    "@types/node": "^16.11.22",
+    "@types/koa-static": "^4.0.2",
+    "@types/node": "^16.11.26",
     "@vitejs/plugin-vue": "^2.1.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",

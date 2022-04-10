@@ -15,6 +15,6 @@ export default defineConfig({
     port: 4200
   },
   build: {
-    outDir: './server/public'
+    outDir: './public'
   }
 });

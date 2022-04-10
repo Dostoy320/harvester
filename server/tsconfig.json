@@ -1,0 +1,18 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "./**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./server/*"]
+    },
+    "types": ["node"],
+    "strictPropertyInitialization": false,
+    "outDir": "../dist",
+    "target": "es2018",
+    "module": "commonjs",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "preserveValueImports": false,
+  }
+}
